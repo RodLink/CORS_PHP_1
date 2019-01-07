@@ -4,7 +4,7 @@ header("Access-Control-Allow-Credentials:true");
 header("Context-Type:text/json");
 
 
-$userName = array('userName'=>'123');
+$userName = array('userName'=>$_SESSION['userName']);
 echo json_encode($userName);
 //RodLink
 //2019年1月3日 08:20:56
